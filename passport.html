@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1024px;height:1024px;background:#23232b;display:flex;align-items:center;justify-content:center;font-family:"Noto Sans Display",sans-serif;font-stretch:condensed;color:#1c2b45}
+.spread{width:1000px;height:960px;background:#f6f1e2;display:flex;box-shadow:0 14px 44px rgba(0,0,0,.55)}
+.page{width:500px;height:960px;padding:30px 28px;position:relative}
+.left{border-right:2px solid #c8b57e}
+.gold{color:#9a7a1e}
+.rule{height:2px;background:#9a7a1e;margin:8px 0 14px}
+.rule2{height:1px;background:#9a7a1e;margin:10px 0}
+h1{font-size:25px;font-weight:900;letter-spacing:2.5px;color:#1c2b45;text-align:center}
+.sub{font-size:11px;letter-spacing:4px;text-align:center;color:#5a6a86;font-weight:700}
+.crest{display:flex;justify-content:center;margin-bottom:6px}
+.row{display:flex;gap:16px}
+.portrait{width:152px;height:192px;border:2px solid #1c2b45;flex:none;background:#dfe9ef;position:relative;overflow:hidden}
+.portrait svg{display:block}
+.pnum{font-size:10px;letter-spacing:1px;color:#5a6a86;margin-top:4px;text-align:center}
+.fields{flex:1}
+.f{margin-bottom:9px}
+.f .lab{font-size:10px;letter-spacing:2px;color:#5a6a86;font-weight:700}
+.f .val{font-size:17px;font-weight:700;letter-spacing:.4px}
+.f .val.big{font-size:21px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.sig{margin-top:2px}
+.sig .lab{font-size:10px;letter-spacing:2px;color:#5a6a86;font-weight:700}
+.sig .name{font-size:19px;font-style:italic;font-weight:700;color:#1c2b45;border-bottom:1px solid #1c2b45;padding-bottom:2px}
+.lang{margin-top:12px;font-size:12.5px;font-weight:700;letter-spacing:.5px}
+.lang b{color:#9a7a1e}
+.mrz{position:absolute;left:28px;right:28px;bottom:26px;font-family:"Noto Sans Mono",monospace;font-size:14.5px;letter-spacing:1.2px;color:#1c2b45;background:#ece5cd;padding:8px 10px;border:1px solid #c8b57e;line-height:1.5}
+h2{font-size:22px;font-weight:900;letter-spacing:3px;text-align:center}
+.visa{border:2px solid #1c2b45;padding:12px 14px;margin-top:12px;background:#fbf7ea}
+.visa .vt{font-size:15px;font-weight:900;letter-spacing:2px;color:#1c2b45}
+.visa .vd{font-size:13.5px;font-weight:700;line-height:1.55;margin-top:4px}
+.visa .fee{color:#8c2f26}
+.stamps{display:grid;grid-template-columns:1fr 1fr;gap:18px 14px;margin-top:20px}
+.stamp{border:3px solid;border-radius:50%;width:196px;height:104px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:6px;opacity:.88}
+.stamp .c{font-size:15px;font-weight:900;letter-spacing:2px}
+.stamp .t{font-size:12px;font-weight:700;letter-spacing:3px}
+.stamp .d{font-size:16px;font-weight:900;letter-spacing:1px}
+.stamp .p{font-size:10px;font-weight:700;letter-spacing:1.5px}
+.navy{border-color:#1f4a7a;color:#1f4a7a;box-shadow:inset 0 0 0 1.5px #1f4a7a}
+.red{border-color:#8c2f26;color:#8c2f26;box-shadow:inset 0 0 0 1.5px #8c2f26}
+.r1{transform:rotate(-7deg)}
+.r2{transform:rotate(5deg)}
+.r3{transform:rotate(-4deg)}
+.r4{transform:rotate(6deg)}
+.note{position:absolute;left:28px;right:28px;bottom:26px;font-size:12px;font-weight:700;line-height:1.5;color:#5a6a86;border-top:1px solid #c8b57e;padding-top:8px}
+.note b{color:#8c2f26}
+.foot{position:absolute;left:28px;right:28px;bottom:8px;font-size:9.5px;letter-spacing:2px;color:#8a97a8;text-align:center}
+</style></head>
+<body>
+<div class="spread">
+  <!-- LEFT: DATA PAGE -->
+  <div class="page left">
+    <div class="crest">
+      <svg width="52" height="46" viewBox="0 0 52 46"><path d="M26 2 L48 40 L40 40 L26 16 L12 40 L4 40 Z" fill="#1c2b45"/><circle cx="26" cy="8" r="3.2" fill="#9a7a1e"/><path d="M20 40 L26 30 L32 40 Z" fill="#9a7a1e"/></svg>
+    </div>
+    <h1>REPUBLIC OF KALDORIA</h1>
+    <div class="sub">PASSPORT &nbsp;·&nbsp; PASSEPORT</div>
+    <div class="rule"></div>
+    <div class="row">
+      <div>
+        <div class="portrait">
+          <svg width="152" height="192" viewBox="0 0 152 192">
+            <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfdde8"/><stop offset="1" stop-color="#eef2f4"/></linearGradient></defs>
+            <rect width="152" height="192" fill="url(#sky)"/>
+            <path d="M0 150 L38 96 L66 138 L96 100 L152 152 L152 192 L0 192 Z" fill="#8fa3b5"/>
+            <path d="M0 168 L52 128 L104 170 L152 138 L152 192 L0 192 Z" fill="#5d7387"/>
+            <path d="M38 192 C40 158 56 146 76 146 C96 146 112 158 114 192 Z" fill="#7a1f24"/>
+            <path d="M56 148 L76 168 L96 148 L96 158 L76 176 L56 158 Z" fill="#c9a24a"/>
+            <path d="M66 146 L76 158 L86 146 L86 152 L76 162 L66 152 Z" fill="#f6f1e2"/>
+            <rect x="68" y="128" width="16" height="22" fill="#e0b48c"/>
+            <ellipse cx="76" cy="98" rx="27" ry="33" fill="#e8c39a"/>
+            <path d="M49 96 C46 62 58 48 76 48 C94 48 106 62 103 96 C101 82 98 72 92 68 C86 64 66 64 60 68 C54 72 51 82 49 96 Z" fill="#3a2a1e"/>
+            <circle cx="76" cy="52" r="9" fill="#3a2a1e"/>
+            <path d="M60 66 C64 60 70 58 76 58 C82 58 88 60 92 66 C88 62 82 60 76 60 C70 60 64 62 60 66 Z" fill="#3a2a1e"/>
+            <path d="M62 92 Q68 89 74 92" stroke="#3a2a1e" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <path d="M78 92 Q84 89 90 92" stroke="#3a2a1e" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <circle cx="68" cy="96" r="2.2" fill="#2b2018"/><circle cx="84" cy="96" r="2.2" fill="#2b2018"/>
+            <path d="M76 98 L74 110 Q76 112 78 110" stroke="#c99b6d" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M67 120 Q76 124 85 120" stroke="#a34d3f" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="pnum">PHOTO · 35 × 45 mm</div>
+      </div>
+      <div class="fields">
+        <div class="f"><div class="lab">TYPE / TYPE</div><div class="val">P</div></div>
+        <div class="f"><div class="lab">CODE / CODE</div><div class="val">KDO</div></div>
+        <div class="f"><div class="lab">PASSPORT No. / No. DU PASSEPORT</div><div class="val big">KD 4839201</div></div>
+        <div class="f"><div class="lab">SURNAME / NOM</div><div class="val big">VOSS</div></div>
+        <div class="f"><div class="lab">GIVEN NAMES / PRÉNOMS</div><div class="val big">MARA ELIN</div></div>
+      </div>
+    </div>
+    <div class="rule2"></div>
+    <div class="grid2">
+      <div class="f"><div class="lab">NATIONALITY / NATIONALITÉ</div><div class="val">KALDORIAN</div></div>
+      <div class="f"><div class="lab">SEX / SEXE</div><div class="val">F</div></div>
+      <div class="f"><div class="lab">DATE OF BIRTH / NÉE LE</div><div class="val">04 JUN 1992</div></div>
+      <div class="f"><div class="lab">PLACE OF BIRTH / LIEU</div><div class="val">TARNVIK</div></div>
+      <div class="f"><div class="lab">DATE OF ISSUE / DÉLIVRÉ LE</div><div class="val">12 MAR 2024</div></div>
+      <div class="f"><div class="lab">PLACE OF ISSUE / LIEU</div><div class="val">TARNVIK</div></div>
+      <div class="f"><div class="lab">DATE OF EXPIRY / EXPIRE LE</div><div class="val">12 MAR 2034</div></div>
+      <div class="f"><div class="lab">AUTHORITY / AUTORITÉ</div><div class="val">MIN. OF THE INTERIOR</div></div>
+    </div>
+    <div class="sig"><div class="lab">HOLDER'S SIGNATURE / SIGNATURE</div><div class="name">Mara Elin Voss</div></div>
+    <div class="lang"><b>LANGUAGES ·</b> Kaldorian / English / Ostravian</div>
+    <div class="mrz">P&lt;KDOVOSS&lt;&lt;MARA&lt;ELIN&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br>KD4839201&lt;8KLD9206046F3403121&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;02</div>
+  </div>
+  <!-- RIGHT: VISAS / STAMPS -->
+  <div class="page right">
+    <h2>VISAS</h2>
+    <div class="sub">STAMPS &amp; ENDORSEMENTS</div>
+    <div class="rule"></div>
+    <div class="visa">
+      <div class="vt">VISA — BELMAR · SINGLE ENTRY</div>
+      <div class="vd">Valid 30 days from first entry · Issued 10 SEP 2024, Tarnvik<br>
+      Purpose: TOURISM · <span class="fee">FEE 40 KRD — PAID</span> · Ref. BM-2024-1187</div>
+    </div>
+    <div class="stamps">
+      <div class="stamp navy r1"><div class="c">OSTRAVIA</div><div class="t">— ENTRY —</div><div class="d">28 JUN 2024</div><div class="p">KORVINA BORDER</div></div>
+      <div class="stamp navy r2"><div class="c">OSTRAVIA</div><div class="t">— EXIT —</div><div class="d">05 JUL 2024</div><div class="p">KORVINA BORDER</div></div>
+      <div class="stamp red r3"><div class="c">BELMAR</div><div class="t">— ENTRY —</div><div class="d">17 SEP 2024</div><div class="p">PORT SAREL · AIR</div></div>
+      <div class="stamp red r4"><div class="c">BELMAR</div><div class="t">— EXIT —</div><div class="d">24 SEP 2024</div><div class="p">PORT SAREL · AIR</div></div>
+    </div>
+    <div class="note"><b>MOUNTAIN PASS PERMIT</b> — required for all land crossings Nov–Apr (Kaldoria Border Code §12). Holder is a registered alpine guide, Tarnvik chapter.</div>
+    <div class="foot">KALDORIA · P · KD 4839201 · PAGE 6–7</div>
+  </div>
+</div>
+</body></html>
